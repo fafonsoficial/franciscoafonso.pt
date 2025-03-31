@@ -1,0 +1,433 @@
+/* Font Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Root Variaveis*/
+:root
+{
+    /* Body */
+    --body-background-color: #fff;
+    --font-family-body: "Poppins", sans-serif;
+    --font-size: 16px;
+    --weight: 400;
+
+    /* Geral */
+    --color-font-geral: #000;
+    --color: #ffffff;
+    --background-color-button: #2d4dad;
+    --background-color-button-hover: #254fce;
+
+    /* Font-size */
+    --font-size-h1: 2rem;
+    --font-size-h2: 1.8rem;
+    --font-size-h3: 1.3rem;
+    --font-size-h4: 1rem;
+
+    /* Font-wwight Logo*/
+    --font-weigth-logo: 700;
+    --font-weigth-social-links: 600;
+    --font-color-linkedin: #0A66C2;
+    --font-color-github: #000000;
+}
+
+/* Base */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: medium;
+    
+}
+
+html 
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-family: var(--font-family-body);
+    font-size: var(--font-size);
+    color: var(--color-font-geral);
+    background-color: var(--body-background-color);
+}
+
+h1, h2, h3, h4
+{
+    font-family: var(--font-family-body);
+}
+
+h1{
+    font-size: var(--font-size-h1);
+}
+
+h2{
+    font-size: var(--font-size-h2);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3
+{
+    font-size: var(--font-size-h3);
+}
+
+h4{
+    font-size: var(--font-size-h4);
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img 
+{
+    width: 300px;
+    height: auto;
+}
+
+.container
+{
+    max-width: 1200px;
+    width: 100%;
+    margin: 8% auto;
+   /*  margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem; */
+}
+
+.section
+{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+/* Header */
+
+.header 
+{
+   width: 100%;
+   height: auto;
+}
+
+.nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo h1
+{
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weigth-logo);  
+    color: var(--color-font-geral);
+    transition: 0.2s ease-in-out;
+}
+
+.nav-logo h1:hover
+{
+    color: var(--color-font-geral);
+    transform: scale(1.05);
+}
+
+.nav-list
+{
+    display: flex; 
+}
+
+.nav-items 
+{
+    padding: 0 10px;
+}
+
+.nav-link
+{
+    display: block;
+    color: var(--color-font-geral);
+    font-weight: var(--font-weigth-social-links);
+    transition: 0.2s ease-out;
+}
+
+.nav-link:hover
+{
+    transform: scale(1.05);
+}
+
+.linkedin
+{
+    color: var(--font-color-linkedin);
+}
+
+.github
+{
+    color: var(--font-color-github);
+}
+
+.nav-link i{
+    font-size: 1.5rem;
+}
+
+
+/* section Home */
+
+.home
+{
+    width: 100%;
+    height: auto;
+}
+
+.home-dado
+{
+    align-items: center;
+}
+
+.home-img
+{
+    text-align: center;
+}
+
+.home-img img 
+{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+.home-title
+{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.home-paragrafo
+{
+    text-align: center;
+}
+
+.btn-links
+{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-links .btn{
+    background-color: var(--background-color-button);
+    color:var(--color);
+    font-weight: var(--weight);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    margin: 10px;
+    padding: 15px 25px;
+    display: inline-block;
+    transition: .5s ease-in-out;
+}
+
+.btn-links .btn:hover
+{
+    background-color: var(--background-color-button-hover);
+    color: var(--color);
+    transform: scale(1.07);
+}
+
+
+/* Skills */
+
+.skills
+{
+    width: 100%;
+    height: auto;
+}
+
+.skills-language
+{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 60px 30px;
+}
+
+.skills-language a
+{
+    border: none;
+    margin-top: 20px;
+    padding: 0 20px;
+    color: var(--color-font-geral);
+    display: inline-block;
+    transition: .5s ease-out;
+}
+
+/* .skills-language a:hover
+{
+    background-color: var(--color-font-geral);
+    color: var(--body-background-color);
+    transform: scale(1.02);
+} */
+
+.card
+{
+    width: 100%;
+    height: 20px auto;
+}
+
+.card-project
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-projeto
+{
+
+    width: 400px;
+    height: auto;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: .5s ease-out;
+}
+
+.card-projeto:hover{
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-projeto h4
+{
+    text-align: center;
+    font-size: 1em;
+    margin: 15px;
+}
+
+.card-projeto p
+{
+    text-align: justify;
+    font-size: 14px;
+}
+
+.card-projeto a
+{
+    width: 100%;
+    background-color: var(--background-color-button);
+    color: var(--color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: .5s ease-out;
+}
+
+.card-projeto a:hover
+{
+    background-color: var(--background-color-button-hover);
+    color: var(--body-background-color);
+    transform: scale(1.05);
+}
+
+/* Contacto */
+.contact-section
+{
+    background-color: var(--body-background-color);
+    color: var(--color-font-geral);
+    box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 500px;
+    margin: auto;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+input, textarea
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button
+{
+    background-color: var(--background-color-button);
+    color: var(--color);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: var(--background-color-button-hover);
+}
+
+
+
+
+/* Media Query */
+
+@media(max-width: 1200px)
+{
+    img
+    {
+        width: 300px;
+        align-items: center;
+    }
+
+    .header
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-logo h1
+    {
+        font-size: 1.3rem;
+        font-weight: var(--font-weigth-logo);  
+        color: var(--color-font-geral);
+    }
+
+    .nav-items 
+    {
+        padding: 0 5px;
+    }
+
+    .nav-link
+    {
+        display: inline;
+    }
+
+    .nav-link i{
+        font-size: 1rem;
+    }
+
+    .skills-language a
+    {
+        display: block;
+    }
+    
+
+    .card-project 
+    {
+        display: block;
+        width: 100%;
+    }
+}
